@@ -19,7 +19,7 @@ public class AccountTriggerHandler {
         {
             Set<id> setOfAccIdsForClosedWon=new  Set<id>();
             Set<id> setOfAccIdsForClosedLost=new  Set<id>();
-            
+            System.debug('@@@ setOfAccIdsForClosedLost'+setOfAccIdsForClosedLost);
             for(Account acc : accList)
             {
                 if(acc.Number_Of_Close_Won__c != null && acc.Number_Of_Close_Won__c != mapOfAccount.get(acc.Id).Number_Of_Close_Won__c  )
